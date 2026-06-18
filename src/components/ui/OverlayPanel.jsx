@@ -76,7 +76,7 @@ export default function OverlayPanel({ onOpenTree }) {
       </div>
 
       {/* Дополнительные кнопки (Справа сверху, под счетчиком) */}
-      <div className="absolute top-28 right-6 md:right-10 pointer-events-auto flex flex-col gap-4">
+      <div className="absolute top-40 right-6 md:right-10 pointer-events-auto flex flex-col gap-4">
         <button 
           onClick={onOpenTree}
           className="bg-purple-900/60 hover:bg-purple-600/80 backdrop-blur-xl border border-purple-500/50 text-purple-100 px-4 py-2 md:px-6 md:py-3 rounded-xl font-bold transition-all shadow-2xl flex items-center justify-center gap-2 text-sm md:text-base"
