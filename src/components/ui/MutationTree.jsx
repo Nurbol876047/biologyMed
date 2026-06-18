@@ -16,9 +16,15 @@ export default function MutationTree({ isOpen, onClose }) {
     const isActive = status === 'active';
     const isNext = status === 'next';
 
+    const activeStyles = {
+      blue: 'bg-blue-900/40 border-blue-500 shadow-[0_0_30px_rgba(59,130,246,0.4)]',
+      amber: 'bg-amber-900/40 border-amber-500 shadow-[0_0_30px_rgba(245,158,11,0.4)]',
+      red: 'bg-red-900/40 border-red-500 shadow-[0_0_30px_rgba(239,68,68,0.4)]'
+    };
+
     return (
       <div className={`relative flex flex-col items-center p-4 rounded-2xl border-2 backdrop-blur-md transition-all duration-500 w-48 text-center
-        ${isActive ? `bg-${color}-900/40 border-${color}-500 shadow-[0_0_30px_rgba(var(--tw-colors-${color}-500),0.4)]` : 
+        ${isActive ? activeStyles[color] : 
           isNext ? 'bg-slate-800/40 border-slate-500/50 opacity-80' : 
           'bg-slate-900/20 border-slate-700 opacity-40 grayscale'}`}
       >
