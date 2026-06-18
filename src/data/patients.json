@@ -1,0 +1,23 @@
+[
+  { 
+    "id": "adult_male", 
+    "name_kk": "Ересек ер адам", 
+    "model": "male.glb", 
+    "scale": 1.2,
+    "overdoseThreshold": 1.0 
+  },
+  { 
+    "id": "adult_female", 
+    "name_kk": "Ересек әйел", 
+    "model": "female.glb", 
+    "scale": 1.1,
+    "overdoseThreshold": 0.9 
+  },
+  { 
+    "id": "child", 
+    "name_kk": "Бала (Сәби)", 
+    "model": "child.glb", 
+    "scale": 0.7,
+    "overdoseThreshold": 0.5 
+  }
+]
