@@ -41,12 +41,12 @@ export default function OverlayPanel({ onOpenTree }) {
           <motion.div 
             initial={{ scale: 0.8, opacity: 0, filter: 'blur(10px)' }}
             animate={{ scale: 1, opacity: 1, filter: 'blur(0px)' }}
-            className="absolute top-1/2 left-[40%] md:left-[35%] lg:left-[40%] -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center"
+            className="absolute top-1/3 right-10 md:right-16 lg:right-24 -translate-y-1/2 text-right flex flex-col items-end"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-red-400 to-red-700 animate-pulse drop-shadow-[0_0_50px_rgba(239,68,68,0.8)] whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-b from-red-400 to-red-700 animate-pulse drop-shadow-[0_0_30px_rgba(239,68,68,0.8)] whitespace-nowrap">
               МУТАЦИЯ АНЫҚТАЛДЫ
             </h2>
-            <p className="text-red-200 font-bold text-xs sm:text-sm md:text-base lg:text-lg mt-4 tracking-[0.1em] md:tracking-[0.2em] uppercase whitespace-nowrap">
+            <p className="text-red-200 font-bold text-[10px] sm:text-xs md:text-sm mt-2 tracking-[0.1em] uppercase whitespace-nowrap">
               Аса қауіпті төзімділік деңгейіне жетті
             </p>
           </motion.div>
